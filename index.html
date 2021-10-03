@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BudgetApp</title>
+    <script src="main.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>BudgetApp</h1>
+    <div class="currentBalance">
+      <h3>Current Balance</h3>
+      <h2 id="currentDigitOne">£0</h2>
+    </div>
+    <div class="inputCurrent">
+      <input id="currentInput" type="number" name="budget" placeholder="Enter current balance..">
+      <input type="submit" onclick="currentBalance()" name="" value="Submit">
+
+    </div>
+
+    <div class="budget">
+      <h3>Budget</h3>
+      <h2 id="currentDigitTwo">£0</h2>
+    </div>
+    <div class="inputbudget">
+      <input id="budgetInput" type="number" name="budget" placeholder="Enter budget..">
+      <input type="submit" onclick="currentBudget()" name="" value="Submit">
+
+    </div>
+
+    <div class="expenses">
+      <h3>Expenses</h3>
+      <h2 id="currentDigitThree">£0</h2>
+    </div>
+
+    <div class="enterExpense">
+      <input id="refInput" type="text" name="" placeholder="Enter reference..">
+      <input id="expInput" type="number" name="" placeholder="Enter expense..">
+      <button type="button" onclick="addExpense()" name="button">Add new expense</button>
+
+    </div>
+
+    <div id="expenseList">
+      <table>
+        <th>Reference</th>
+        <th>Expenses</th>
+
+      </table>
+
+    </div>
+
+
+  </body>
+</html>
