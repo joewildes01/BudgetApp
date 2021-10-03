@@ -8,8 +8,16 @@ function currentBalance() {
 
   var current = document.getElementById('currentDigitOne');
   balance = document.getElementById('currentInput').value;
+  var currentBud = document.getElementById('currentDigitTwo');
+  budget = document.getElementById('budgetInput').value;
 
   current.innerHTML = "£" + balance;
+
+  if (balance > 0) {
+    current.style.color = "green";
+
+  };
+
 };
 function currentBudget() {
 
@@ -17,6 +25,11 @@ function currentBudget() {
   budget = document.getElementById('budgetInput').value;
 
   currentBud.innerHTML = "£" + budget;
+
+  if (budget > 0) {
+    currentBud.style.color = "green";
+
+  };
 
 };
 function addExpense() {
@@ -65,6 +78,17 @@ function addExpense() {
   currentBud.innerHTML = "£" + budget;
   bal.innerHTML = "£" + balance;
 
+  if (balance < 0) {
+    bal.style.color = "red"
+
+  };
+  if (budget < 0) {
+    currentBud.style.color = "red"
+
+  };
+
+
+
 
 };
 
@@ -92,5 +116,22 @@ function removeExpense(object, number) {
   cur.innerHTML = "£" + expense;
   currentBud.innerHTML = "£" + budget;
   bal.innerHTML = "£" + balance;
+
+  if (balance > 0) {
+    bal.style.color = "green";
+
+  };
+  if (budget > 0) {
+    currentBud.style.color = "green";
+
+  };
+  if (balance > 0) {
+    bal.style.color = "green";
+
+  };
+  if (budget > 0) {
+    currentBud.style.color = "green";
+
+  };
 
 }
